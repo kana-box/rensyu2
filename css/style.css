@@ -1241,7 +1241,7 @@ header{
 }
 
 .headerinner{
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -1313,7 +1313,7 @@ header{
   background-color: #a87b09;
   color: #fff;
   float: left;
-  width: 100px;
+  width: 100%;
   height: 50px;
   line-height: 50px;
 }
@@ -1325,8 +1325,9 @@ header{
   height: 50px;
   line-height: 50px;
   color: #333;
-  padding-left: 16px;
+  padding-left: 0;
   font-size: 8px;
+  text-align: center;
 }
 
 .guidered{
