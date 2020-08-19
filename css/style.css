@@ -215,43 +215,25 @@ nav div a:hover::after {
   opacity: 0.7;
 }
 
-.menu__item a::after {
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 2px;
-  background: #a87b09;
-  opacity: 0;
-  visibility: hidden;
-  transition: .3s;
-}
-
-.menu__item a:hover::after {
-  bottom: -4px;
-  opacity: 1;
-  visibility: visible;
-}
-
-.menu__item a span{
-  padding-left: 16px;
-}
-
 /*----------------------------
-* レスポンシブ　ハンバーガーメニュー
-　アニメーション部分
+* アニメーション部分
 *----------------------------*/
 
 /* アニメーション前のメニューの状態 */
 .menu{
-  transform: translateX(100vw);
-  transition: all .3s linear;
+  pointer-events: none;
+  opacity: 0;
+  transform-origin: center;
+  transform: scale(.5);
+  transition: all .3s ease;
 }
 /* アニメーション後のメニューの状態 */
 .menu.is-active{
-  transform: translateX(0);
+  pointer-events: auto;
+  opacity: 1;
+  transform: scale(1.0);
 }
+
 
 /* ================================================ */
 /*               guide              */
@@ -906,7 +888,7 @@ footer .copyright{
 }
 
 .hotel_button{
-  background-color: #fc7177;
+  background:linear-gradient(to right, #ded4ef, #f3b5ba);
   width: 300px;
   height: 50px;
   text-align: center;
@@ -916,11 +898,12 @@ footer .copyright{
   line-height: 50px;
   margin: 0 auto;
   transition-property: all;
-  transition: 0.3s linear;
+  transition: 0.5s linear;
 }
 
 .hotel_button:hover{
   opacity: 0.7;
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
 }
 
 
@@ -1515,6 +1498,7 @@ footer .copyright{
 
 
 }
+
 /* ipad */
 
 @media (max-width: 1024px){
@@ -1671,7 +1655,7 @@ header{
 .cliniclists a{
   color: #5c4405;
 	transition-property: all;
-	transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 .cliniclists a:hover{
@@ -1681,11 +1665,13 @@ header{
 .cliniclists h3 img{
   display: inline-block;
   padding-right: 8px;
+  margin-top: 8px;
 }
 
 .cliniclists p{
   font-size: 12px;
   margin-bottom: 40px;
+  margin-top: 8px
 }
 
 /* clinic */
@@ -1998,7 +1984,7 @@ footer .copyright{
 }
 
 .newslist{
-  text-align: center;
+  text-align: left;
 }
 
 .newslist p{
@@ -2027,7 +2013,7 @@ footer .copyright{
   background-color: #feffde;
   width: 100%;
   height: 100px;
-  font-size: 12px;
+  font-size: 10px;
   color: #666666;
   text-align: center;
   padding-top:25px;
@@ -2076,13 +2062,13 @@ footer .copyright{
 
 .hotellist p{
   margin: 20px 0 60px 0;
-  font-size: 14px;
+  font-size: 12px;
   color: #333;
   text-align: left;
 }
 
 .hotel_button{
-  background-color: #fc7177;
+  background:linear-gradient(to right, #ded4ef, #f3b5ba);
   width: 100%;
   height: 50px;
   text-align: center;
@@ -2092,11 +2078,12 @@ footer .copyright{
   line-height: 50px;
   margin: 0 auto;
   transition-property: all;
-  transition: 0.3s linear;
+  transition: 0.5s linear;
 }
 
 .hotel_button:hover{
   opacity: 0.7;
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
 }
 
 
