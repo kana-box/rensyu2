@@ -613,6 +613,7 @@ footer .copyright{
 
 .teacher{
   width: 100%;
+  visibility: hidden;
 }
 
 .teacherinner{
@@ -671,6 +672,7 @@ footer .copyright{
 
 .staff{
   width: 100%;
+  visibility: hidden;
 }
 
 .staffinner{
@@ -703,6 +705,7 @@ footer .copyright{
 
 .facility{
   width: 100%;
+  visibility: hidden;
 }
 
 .facilityinner{
@@ -760,6 +763,7 @@ footer .copyright{
 
 .news{
   width: 100%;
+  visibility: hidden;
 }
 
 .newsinner{
@@ -859,6 +863,7 @@ footer .copyright{
 
 .hotel{
   width: 100%;
+  visibility: hidden;
 }
 
 .hotelinner{
