@@ -67,3 +67,58 @@ $(function(){
        $('body,html').animate({scrollTop: 0}, 500);  // TOPへスクロール
        return false;
    });
+
+ // about.html　先生フェードイン
+ $('.teacher').waypoint(function(){
+  if($('.teacher').css('visibility') == 'visible') {
+  }
+  else {
+    $('.teacher').css('visibility','visible');
+    $('.teacher').toggleClass('animated fadeIn');
+  }
+},{offset: '40%'}
+);
+
+ // about.html　 スタッフフェードイン
+ $('.staff').waypoint(function(){
+  if($('.staff').css('visibility') == 'visible') {
+  }
+  else {
+    $('.staff').css('visibility','visible');
+    $('.staff').toggleClass('animated fadeIn');
+  }
+},{offset: '40%'}
+);
+
+ // facility.html　 院内施設フェードイン
+ $('.facility').waypoint(function(){
+  if($('.facility').css('visibility') == 'visible') {
+  }
+  else {
+    $('.facility').css('visibility','visible');
+    $('.facility').toggleClass('animated fadeIn');
+  }
+},{offset: '40%'}
+);
+
+// news.html　 お知らせフェードイン
+$('.news').waypoint(function(){
+  if($('.news').css('visibility') == 'visible') {
+  }
+  else {
+    $('.news').css('visibility','visible');
+    $('.news').toggleClass('animated fadeIn');
+  }
+},{offset: '40%'}
+);
+
+// hotel.html　 ホテルフェードイン
+$('.hotel').waypoint(function(){
+  if($('.hotel').css('visibility') == 'visible') {
+  }
+  else {
+    $('.hotel').css('visibility','visible');
+    $('.hotel').toggleClass('animated fadeIn');
+  }
+},{offset: '40%'}
+);
